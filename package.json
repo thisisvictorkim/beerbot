@@ -11,5 +11,12 @@
   "dependencies": {
     "@slack/bolt": "^1.2.0",
     "moment": "^2.24.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "10.x"
+  },
+  "scripts": {
+    "start": "node app.js"
   }
 }
