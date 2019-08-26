@@ -9,7 +9,7 @@ const app = new App ({
 });
 
 var cTime = new moment();
-var dTime = new moment.hour(16).minute(30).second(0).millisecond(0);
+var dTime = new moment().hour(16).minute(30).second(0).millisecond(0);
 var testTime = new moment.utc();
 var early = dTime.diff(cTime, 'minutes');
 var late = cTime.diff(dTime, 'minutes');
