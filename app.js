@@ -8,8 +8,8 @@ const app = new App ({
   signingSecret: process.env.SLACK_SIGNING_SECRET
 });
 
-var cTime = new moment();
-var dTime = new moment().hour(16).minute(30).second(0).millisecond(0);
+var cTime = new moment.utc();
+var dTime = new moment.utc().hour(16).minute(30).second(0).millisecond(0);
 cTime.local();
 dTime.local();
 var early = dTime.diff(cTime, 'minutes');
