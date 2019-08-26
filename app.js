@@ -10,6 +10,7 @@ const app = new App ({
 
 var cTime = new moment.utc();
 var dTime = new moment.utc().hour(16).minute(30).second(0).millisecond(0);
+var testTime = new moment();
 cTime.local();
 dTime.local();
 var early = dTime.diff(cTime, 'minutes');
@@ -30,5 +31,6 @@ app.message(':beer:', ({message, say}) => {
   await app.start(process.env.PORT || 5000);
   console.log('⚡️ Bolt app is running!;');
   console.log(cTime);
+  console.log(testTime);
   console.log(dTime);
 })();
