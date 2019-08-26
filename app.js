@@ -17,7 +17,7 @@ var late = cTime.diff(dTime, 'minutes');
 //listen to incoming messages
 app.message(':beer:', ({message, say}) => {
   if (cTime >= dTime) {
-    say (`What are you waiting for (<@${message.user}>? You could've been drinking for ${late} minutes already!`);
+    say (`What are you waiting for <@${message.user}>? You could've been drinking for ${late} minutes already!`);
   } else {
     say (`Pump the breaks there <@${message.user}>... drink o'clock is ${early} minutes away`);
   }
