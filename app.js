@@ -27,4 +27,6 @@ app.message(':beer:', ({message, say}) => {
   //start your APP
   await app.start(process.env.PORT || 5000);
   console.log('⚡️ Bolt app is running!;');
+  console.log(cTime);
+  console.log('drink time 'dTime);
 })();
