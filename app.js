@@ -1,5 +1,5 @@
 const {App} = require ('@slack/bolt');
-var moment = require ('@slack/moment');
+var moment = require ('moment');
 moment().format();
 
 //initializes your app with your bot token and signing secret
@@ -25,6 +25,6 @@ app.message(':beer:', ({message, say}) => {
 
 (async () => {
   //start your APP
-  await app.start(process.env.PORT || 3000);
+  await app.start(process.env.PORT || 5000);
   console.log('⚡️ Bolt app is running!;');
 })();
